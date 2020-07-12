@@ -1,4 +1,4 @@
-let carro: {
+const carro = {
   ano: '2015',
   modelo: 'onix',
   versao: 'tsi',
