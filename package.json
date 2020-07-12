@@ -1,0 +1,39 @@
+{
+    "name": "test_browser_js",
+    "version": "1.0.0",
+    "description": "Classes form render, DOM, JavaScript, Browsers and functions",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "lint": "eslint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LGondin/browser.git"
+    },
+    "keywords": [
+        "Browsers",
+        "tags",
+        "commands",
+        "browsers",
+        "DOM",
+        "JavaScripts",
+        "Function",
+        "Browser"
+    ],
+    "author": "LHackerBit  & William Rap0so",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LGondin/browser/issues"
+    },
+    "homepage": "https://github.com/LGondin/browser#readme",
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint": "^7.4.0",
+        "eslint-config-airbnb-base": "^14.2.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.22.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "prettier": "^2.0.5"
+    }
+}
