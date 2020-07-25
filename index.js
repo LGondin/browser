@@ -1,4 +1,4 @@
-// create cards
+// create cards 
 // randomize cards
 // show cards
 // save first click card
