@@ -10,7 +10,7 @@ body {
   display: flex;
 }
 
-.flex-child {
+.flex-child-row {
   flex-direction: row;
   align-items: center;
   align-content: center;
