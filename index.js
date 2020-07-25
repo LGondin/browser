@@ -1,5 +1,5 @@
-// create cards 
-// randomize cards
+// create cards - OK
+// randomize cards - OK
 // show cards
 // save first click card
 // save second click card

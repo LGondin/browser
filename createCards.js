@@ -13,6 +13,8 @@ const cards = [
 
 const doubleCards = [...cards, ...cards]
 
-console.log(doubleCards)
+const randomCards = doubleCards.sort(function shuffleCard() {
+  return 0.5 - Math.random()
+})
 
-export default doubleCards
+export default randomCards
