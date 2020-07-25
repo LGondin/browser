@@ -3,9 +3,10 @@
 
 // 🌟 bonus: o texto do h1 se tornar: "O clicado foi: [numero do botao aqui]"
 
-const name = document.getElementById('name')
-const button = document.getElementById('button')
-
-// button.addEventListener('click', function clickButton() {
-//   name.value = ''
-// })
+const title = document.querySelector('h1')
+const allButtons = document.querySelectorAll('button')
+allButtons.forEach(function(button){
+  button.addEventListener('click', function clickButton() {
+    title.innerText = `O clidado foi: ${button.innerText}`
+  })
+})
