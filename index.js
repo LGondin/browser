@@ -10,8 +10,8 @@
 // if there are no more cards
 //  finish
 // turn cards down
-import showCards from './showCards.js'
 import createCards from './createCards.js'
+import showCards from './showCards.js'
 
 const cards = createCards()
 showCards(cards)
