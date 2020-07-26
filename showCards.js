@@ -6,7 +6,8 @@ function showCards(cards) {
   cards.forEach(function showMeCard(currentCard) {
     const card = document.createElement('div')
     card.className = 'card-style'
-    card.innerHTML = currentCard
+    card.style.backgroundColor = currentCard
+
     wrapperElement.appendChild(card)
   })
 }
