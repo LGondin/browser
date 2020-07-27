@@ -4,8 +4,8 @@
 // save first click card - OK
 // save second click card - OK
 // compare clicked cards - OK
-// send response to screen
-// if equal remove cards
+// send response to screen - TODO
+// if equal remove cards - OK
 //  save points
 // if there are no more cards
 //  finish
@@ -13,10 +13,16 @@
 import createCards from './createCards.js'
 import showCards from './showCards.js'
 import saveClicks from './saveClicks.js'
+import removeCards from './removeCards.js'
 
 const cards = createCards()
 showCards(cards)
 
-saveClicks(function test(result) {
-  console.log(result)
+// TODO: replace `test` name to something better
+saveClicks(function test(codeCard) {
+  if (codeCard) {
+    removeCards(codeCard)
+  } else {
+    window.alert(':(')
+  }
 })
