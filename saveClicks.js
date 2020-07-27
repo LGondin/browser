@@ -7,14 +7,19 @@ function saveClicks(callback) {
   // array anterior rodando com um loop e usando a function para criar um evento click a click que da um log de?
   elementsCardStyle.forEach(function listCard(currentItem) {
     currentItem.addEventListener('click', function clickListener(event) {
-      if (!clicks.firstClickedCard) {
-        clicks.firstClickedCard = event.target.dataset.color
-      } else {
-        const secondClickedCard = event.target.dataset.color
+      const clickedElement = event.target
+      const currentColor = clickedElement.dataset.color
+      clickedElement.classList.add('clicked')
 
-        if (clicks.firstClickedCard === secondClickedCard) {
-          callback(true)
+      if (!clicks.firstClickedCard) {
+        clicks.firstClickedCard = currentColor
+      } else {
+        if (clicks.firstClickedCard === currentColor) {
+          callback(currentColor)
+        } else {
+          callback(false)
         }
+
         clicks.firstClickedCard = null
       }
     })
