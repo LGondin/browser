@@ -50,3 +50,12 @@ h1 {
   transition: all .2s ease;
   box-shadow: 0 0 4px 0 #c0c0c0;
 }
+
+/* TODO: add some better effect */
+.clicked {
+  border: 1px solid
+}
+
+.hide {
+  display: none;
+}
