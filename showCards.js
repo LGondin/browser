@@ -5,7 +5,8 @@ function showCards(cards) {
   // Finalizar as funcionalidades montando um loop para mostrar no innerHTML os itens que resultarem do forEach
   cards.forEach(function showMeCard(currentCard) {
     const card = document.createElement('div')
-    card.className = `card-style ${currentCard}`
+    card.className = 'card-style'
+    card.dataset.color = currentCard
     card.style.backgroundColor = currentCard
 
     wrapperElement.appendChild(card)

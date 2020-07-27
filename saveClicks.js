@@ -8,9 +8,9 @@ function saveClicks(callback) {
   elementsCardStyle.forEach(function listCard(currentItem) {
     currentItem.addEventListener('click', function clickListener(event) {
       if (!clicks.firstClickedCard) {
-        clicks.firstClickedCard = event.target.className
+        clicks.firstClickedCard = event.target.dataset.color
       } else {
-        const secondClickedCard = event.target.className
+        const secondClickedCard = event.target.dataset.color
 
         if (clicks.firstClickedCard === secondClickedCard) {
           callback(true)
