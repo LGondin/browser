@@ -19,6 +19,10 @@ h2 {
   font-size: 32px;
 }
 
+h3 {
+  text-align: center;
+}
+
 #wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +41,6 @@ h2 {
   align-content: center;
 }
 
-
 .card-style {
   cursor: pointer;
   flex: 1;
@@ -46,19 +49,19 @@ h2 {
   height: 200px;
   margin: 10px;
   box-shadow: 0 0 4px 2px #c0c0c0;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   border-radius: 1px;
 }
 
 .card-style:hover {
   transform: scale(1.05);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   box-shadow: 0 0 4px 0 #c0c0c0;
 }
 
 /* TODO: add some better effect */
 .clicked {
-  border: 1px solid
+  border: 1px solid;
 }
 
 .hide {
