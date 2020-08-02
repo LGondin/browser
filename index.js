@@ -9,7 +9,6 @@ import turnCardsDown from './turnCardsDown.js'
 const cards = createCards()
 showCards(cards)
 
-// TODO: replace `test` name to something better
 saveClicks(function test(codeCard) {
   setScore(codeCard)
   setTimeout(function waitForSeeColor() {

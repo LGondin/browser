@@ -58,3 +58,7 @@ h3 {
 .hide {
   display: none;
 }
+
+.clicked {
+  pointer-events: none;
+}
