@@ -1,10 +1,10 @@
-import createCards from './createCards.js'
-import showCards from './showCards.js'
-import saveClicks from './saveClicks.js'
-import removeCards from './removeCards.js'
-import setScore from './setScore.js'
-import showFinishMessage from './showFinishMessage.js'
-import turnCardsDown from './turnCardsDown.js'
+import createCards from './src/createCards.js'
+import showCards from './src/showCards.js'
+import saveClicks from './src/saveClicks.js'
+import removeCards from './src/removeCards.js'
+import setScore from './src/setScore.js'
+import showFinishMessage from './src/showFinishMessage.js'
+import turnCardsDown from './src/turnCardsDown.js'
 
 const cards = createCards()
 showCards(cards)
