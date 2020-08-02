@@ -30,5 +30,6 @@ saveClicks(function test(codeCard) {
   if (codeCard) {
     removeCards(codeCard)
   }
+
   showFinishMessage()
 })

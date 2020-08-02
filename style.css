@@ -44,12 +44,10 @@ h3 {
 .card-style {
   cursor: pointer;
   flex: 1;
-  border: 1px solid #bbb;
   min-width: 200px;
   height: 200px;
   margin: 10px;
   transition: all 0.2s ease;
-  border-radius: 1px;
 }
 
 .card-style:hover {
