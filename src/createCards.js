@@ -1,4 +1,4 @@
-function createCards() {
+const createCards = () => {
   const cards = [
     '#FF5733',
     '#FFFC33',
@@ -23,9 +23,7 @@ function createCards() {
 
   const doubleCards = [...cards, ...cards]
 
-  const randomCards = doubleCards.sort(function shuffleCard() {
-    return 0.5 - Math.random()
-  })
+  const randomCards = doubleCards.sort(() => 0.5 - Math.random())
 
   return randomCards
 }

@@ -1,7 +1,7 @@
-function removeCards(codeCard) {
+const removeCards = (codeCard) => {
   const cards = document.querySelectorAll('.card-style')
 
-  cards.forEach(function eachCard(currentCard) {
+  cards.forEach((currentCard) => {
     if (currentCard.dataset.color === codeCard) {
       currentCard.classList.add('hide')
     }
