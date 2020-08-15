@@ -9,9 +9,10 @@ import turnCardsDown from './src/turnCardsDown.js'
 const cards = createCards()
 showCards(cards)
 
-saveClicks(function test(codeCard) {
+saveClicks((codeCard) => {
   setScore(codeCard)
-  setTimeout(function waitForSeeColor() {
+
+  setTimeout(() => {
     if (codeCard) {
       removeCards(codeCard)
     } else {
