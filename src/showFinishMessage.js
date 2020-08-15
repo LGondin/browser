@@ -3,7 +3,7 @@ const showFinishMessage = () => {
   const totalCards = cards.length
   const finishMessage = document.querySelector('h3')
 
-  finishMessage.classList.remove(totalCards === 0 ? 'hide' : '')
+  finishMessage.classList.remove(totalCards === 0 ? 'hide' : 'none')
 }
 
 export default showFinishMessage
