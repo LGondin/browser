@@ -11,11 +11,8 @@ const saveClicks = (callback) => {
       const currentColor = clickedElement.dataset.color
       clickedElement.classList.add('clicked')
 
-      const haveColor = Boolean(clicks.firstClickedCard)
-
-      clicks.firstClickedCard = haveColor
-        ? clicks.firstClickedCard
-        : currentColor
+      debugger
+      clicks.firstClickedCard = clicks.firstClickedCard || currentColor
 
       if (clicks.firstClickedCard === currentColor) {
         callback(currentColor)
