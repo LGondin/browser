@@ -1,4 +1,4 @@
-const removeCards = (codeCard) => {
+const removeCards = codeCard => {
   const cards = document.querySelectorAll('.card-style')
 
   cards.forEach((currentCard) => {
