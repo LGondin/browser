@@ -18,7 +18,7 @@ saveClicks((codeCard) => {
     } else {
       turnCardsDown()
     }
-  }, 4000)
+  }, 1500)
 
   showFinishMessage()
 })

@@ -1,4 +1,4 @@
-const saveClicks = (callback) => {
+function saveClicks(callback) {
   const elementsCardStyle = document.querySelectorAll('.card-style') // Const que me criou um array com todos os itens que tem classe card-style
   const clicks = {
     firstClickedCard: null,
@@ -11,16 +11,15 @@ const saveClicks = (callback) => {
       const currentColor = clickedElement.dataset.color
       clickedElement.classList.add('clicked')
 
-      debugger
-      clicks.firstClickedCard = clicks.firstClickedCard || currentColor
-
-      if (clicks.firstClickedCard === currentColor) {
-        callback(currentColor)
+      if (!clicks.firstClickedCard) {
+        clicks.firstClickedCard = currentColor
       } else {
-        callback(false)
-      }
+        if (clicks.firstClickedCard === currentColor) {
+          callback(currentColor)
+        } else {
+          callback(false)
+        }
 
-      if (clicks.firstClickedCard) {
         clicks.firstClickedCard = null
       }
     })
